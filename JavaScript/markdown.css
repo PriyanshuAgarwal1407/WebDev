@@ -1,0 +1,251 @@
+/* =========================================================
+   DeepSeek-Style Dark Theme for Markdown
+   HTML / CSS / JS Optimized
+   VS Code + IntelliJ Compatible
+   ========================================================= */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;700&family=Merriweather:wght@700&display=swap');
+
+/* Body */
+body {
+    font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    line-height: 1.75;
+    font-size: 17px;
+    background: #0f1115;
+    color: #dcdcdc;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: "Merriweather", Georgia, serif;
+    font-weight: 700;
+}
+h1 {
+    font-size: 2.4em;
+    border-bottom: 3px solid #61AFEF;
+    color: #ffffff;
+}
+h2 {
+    font-size: 1.9em;
+    border-left: 5px solid #61AFEF;
+    padding-left: 0.6rem;
+    color: #f5f5f5;
+}
+h3 {
+    font-size: 1.5em;
+    color: #dcdcdc;
+}
+
+/* Links */
+a {
+    color: #61AFEF;
+    font-weight: 500;
+}
+a:hover { text-decoration: underline; }
+
+/* Inline Code */
+code {
+    font-family: "Fira Code", monospace;
+    background: #1a1c20;
+    padding: 0.25rem 0.45rem;
+    border-radius: 6px;
+    font-size: 0.95em;
+    color: #e6edf3;
+    font-variant-ligatures: contextual;
+}
+
+/* Code Blocks */
+pre {
+    background: #1a1c20;
+    border-radius: 10px;
+    padding: 1.2rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border: 1px solid #181A1F;
+}
+pre code {
+    background: none;
+    padding: 0;
+    color: #c9d1d9;
+    line-height: 1.6;
+}
+
+/* =========================================================
+   DeepSeek-Style Syntax Highlighting
+   ========================================================= */
+
+/* Keywords */
+.token.keyword,
+span.keyword {
+    color: #ff79c6;
+    font-weight: 600;
+}
+
+/* Functions */
+.token.function,
+span.function {
+    color: #61dafb;
+}
+
+/* Strings */
+.token.string,
+span.string {
+    color: #7CFFB2;
+}
+
+/* Numbers */
+.token.number,
+span.number {
+    color: #FFB86C;
+}
+
+/* Booleans / null */
+.token.boolean,
+.token.null {
+    color: #FFB86C;
+    font-style: italic;
+}
+
+/* Comments */
+.token.comment,
+span.comment {
+    color: #6b7280;
+    font-style: italic;
+}
+
+/* Operators */
+.token.operator {
+    color: #00E0C6;
+}
+
+/* =========================================================
+   HTML
+   ========================================================= */
+
+.token.tag {
+    color: #ff6b6b;
+}
+.token.attr-name {
+    color: #f7c56b;
+}
+.token.attr-value {
+    color: #7CFFB2;
+}
+
+/* =========================================================
+   CSS
+   ========================================================= */
+
+.token.selector {
+    color: #c792ea;
+}
+.token.property {
+    color: #4fd6be;
+}
+.token.unit {
+    color: #f7c56b;
+}
+
+/* =========================================================
+   JavaScript
+   ========================================================= */
+
+.token.builtin {
+    color: #4fd6be;
+}
+.token.class-name {
+    color: #f7c56b;
+}
+.token.template-string {
+    color: #7CFFB2;
+}
+
+/* =========================================================
+   Blockquotes
+   ========================================================= */
+
+blockquote {
+    border-left: 5px solid #5C6370;
+    background: #2c313a;
+    padding: 1rem;
+    color: #d0d0d0;
+    font-style: italic;
+}
+
+/* =========================================================
+   DeepSeek-Style Tables
+   ========================================================= */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 1.8rem 0;
+    font-size: 0.95em;
+    background: #1a1c22;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #2a2f3a;
+}
+
+th {
+    background: #232732;
+    color: #e6edf3;
+    padding: 0.9rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 1px solid #2f3542;
+}
+
+td {
+    background: #1a1c22;
+    color: #c9d1d9;
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #2a2f3a;
+}
+
+tr:nth-child(even) td {
+    background: #1e212b;
+}
+
+tr:hover td {
+    background: #232838;
+}
+
+/* HR */
+hr {
+    height: 2px;
+    background: #5C6370;
+    border: none;
+    margin: 2rem 0;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.5);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #3a3f4b;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #1a1c20;
+}
+
+/* Selection */
+::selection {
+    background: #264F78;
+    color: #ffffff;
+}
